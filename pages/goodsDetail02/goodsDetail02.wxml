@@ -1,0 +1,57 @@
+<!--pages/goodsDetail02/goodsDetail02.wxml-->
+<view class="box">
+  <view class="detailImg">
+    <image src="{{detail}}"></image>
+  </view>
+  <view class="detailText1">
+    <view class="detailTop">
+      <view class="detailTopImg">
+        <image src="{{detail}}"></image>
+      </view>
+      <view class="detailDescribe">
+        <view class="detailText2">
+          <view class="detailText5">
+            <text>{{detailText}}</text>
+          </view>
+          <view class="detailText3">
+            <text>¥{{detailPrice}}</text>
+          </view>
+          <view class="detailText4">
+            <text>{{detailOrigin}}</text>
+          </view>
+        </view>
+      </view>
+      <view>
+      </view>
+    </view>
+    <view class="detailBottom">
+      <view class="detailGuige">
+        <text>规格</text>
+      </view>
+      <view class="guige" wx:for="{{guigeList}}" wx:key="{{index}}">
+        <view class="{{index==id?'active':'guigeList'}}" bindtap="choseTxtColor" data-id="{{index}}">
+          <text>{{item}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <text class="test">q9r8ehfnsvcifdlksnc</text>
+   <view class="detailNum">
+    <view class="detaiNum1">
+      <text>数量</text>
+    </view>
+    <view class="detaiNum2 item" bindtap="goReduce">
+      <text>-</text>
+    </view>
+    <view class="detaiNum3 item bg">
+      <text>{{num}}</text>
+    </view>
+    <view class="detaiNum4 item" bindtap="goheight">
+      <text>+</text>
+    </view>
+  </view> 
+</view>
+
+<view>
+  <button class="loginBtn" bindtap="gocar">确定</button>
+</view>

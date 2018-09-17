@@ -1,0 +1,160 @@
+/* pages/goodsDetail02/goodsDetail02.wxss */
+
+.box {
+  padding-bottom: 300rpx;
+}
+
+.detailImg {
+  height: 498rpx;
+  width: 100%;
+  padding-bottom: 30rpx;
+}
+
+.detailImg image {
+  height: 100%;
+  width: 100%;
+}
+
+.detailText1 {
+  padding: 20rpx;
+}
+
+.detailTopImg {
+  width: 180rpx;
+  height: 180rpx;
+  float: left;
+  padding-right: 20rpx;
+}
+
+.detailTopImg image {
+  width: 100%;
+  height: 100%;
+}
+
+.detailText5 {
+  font-size: 34rpx;
+  color: rgb(39, 39, 39);
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.detailText3 {
+  font-size: 30rpx;
+  height: 40rpx;
+  color: rgb(39, 39, 39);
+}
+
+.detailText4 {
+  font-size: 22rpx;
+  height: 40rpx;
+  color: rgb(128, 128, 128);
+  padding-bottom: 20px;
+}
+
+.detailGuige {
+  font-size: 26rpx;
+  color: #000;
+  padding-bottom: 20rpx;
+}
+
+.detailDescribe {
+  float: left;
+  width: 510rpx;
+}
+
+.detailBottom {
+  width: 730rpx;
+}
+
+.detailBottom {
+  margin-bottom: 20rpx;
+}
+
+.guigeList {
+  width: 108rpx;
+  height: 70rpx;
+  background-color: rgb(245, 245, 245);
+  margin-right: 15rpx;
+  float: left;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 26rpx;
+  color: #000;
+}
+
+.active {
+  background-color: rgb(255, 212, 68);
+  width: 108rpx;
+  height: 70rpx;
+  margin-right: 15rpx;
+  float: left;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 26rpx;
+  color: #000;
+}
+
+.detailNum {
+  width: 730rpx;
+  font-size: 26rpx;
+  padding: 20rpx;
+  padding-top: 0;
+}
+
+.test {
+  color: transparent;
+}
+
+.detaiNum1 {
+  padding-bottom: 20rpx;
+}
+
+.item {
+  width: 88rpx;
+  height: 70rpx;
+  background-color: rgb(245, 245, 245);
+  margin-right: 15rpx;
+  float: left;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 26rpx;
+  color: #000;
+}
+
+.bg {
+  background-color: #fff;
+}
+
+.loginBtn {
+  background-color: rgb(255, 212, 68);
+  width: 800rpx;
+  height: 88rpx;
+  color: #000;
+  font-size: 32rpx;
+  margin-top: 160rpx;
+  border-radius: 0;
+  position: fixed;
+  bottom: 0;
+  left: -20rpx;
+  overflow: hidden;
+}
+
+/*----------0000000000000000  */
+
+.chose-txt {
+  border-radius: 6px;
+  font-size: 26rpx;
+  height: 40px;
+  width: 27.5%;
+  margin: 5px;
+  float: left;
+  padding-top: 5px;
+}
+
+.chose-p {
+  line-height: 18px;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  float: left;
+}

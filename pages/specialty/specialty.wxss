@@ -1,0 +1,276 @@
+/* pages/specialty/specialty.wxss */
+
+.head {
+  height: 180rpx;
+  width: 100%;
+}
+.headbg {
+    position:relative;
+    top:0;
+    left:0;
+    height: 200rpx;
+    width: 100%;
+}
+.item {
+  position:absolute; 
+  top:20rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border: 4rpx solid rgba(255, 255, 255, 0.2);
+  justify-content: center;
+  display: -webkit-flex;
+  align-items: center;
+  float: left;
+  font-size: 24rpx;
+  margin-right: 20rpx;
+  z-index:999;
+  color: #fff;
+}
+
+ .item1{
+  left:10rpx;
+  
+}
+.gift {
+  width:100%;
+  height:100%;
+ 
+}
+.item1 image {
+  width:100%;
+  height:100%;
+}
+
+.item2{
+  left:200rpx;
+}
+.item3{
+  left:390rpx;
+}
+.item4{
+  left:580rpx;
+} 
+.item3Text {
+  width:100rpx;
+
+}
+.active {
+  padding: 0 10rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 3rpx solid #000;
+  color:#000;
+}
+.priceTitle {
+  height: 80rpx;
+  position: relative;
+  font-size: 24rpx;
+  color:rgb(128,128,128);
+}
+
+.priceTitle .moren {
+  position: absolute;
+  left: 80rpx;
+  top: 30rpx;
+}
+
+.priceTitle .jiage {
+  position: absolute;
+  left: 290rpx;
+  top: 30rpx;
+  padding: 0 10rpx;
+}
+
+.priceTitle .jigeImg {
+  width: 20rpx;
+  height: 25rpx;
+  position: absolute;
+  left: 360rpx;
+  top: 35rpx;
+}
+
+.priceTitle .sales {
+  position: absolute;
+  left: 550rpx;
+  top: 30rpx;
+  padding: 0 10rpx;
+ 
+}
+
+.priceTitle .salesImg {
+  width: 20rpx;
+  height: 25rpx;
+  position: absolute;
+  left: 620rpx;
+  top: 35rpx;
+}
+
+.box {
+  background: #fafafa;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+
+.wx-swiper-dots {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+}
+
+.same {
+  padding: 10rpx 20rpx 0 20rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin: 20rpx 0;
+}
+
+.hotPic {
+  width: 350rpx;
+  padding-bottom: 50rpx;
+}
+
+.hotPic .pic {
+  width: 100%;
+  height: 320rpx;
+}
+
+.hotPic .pic image {
+  width: 100%;
+  height: 100%;
+}
+
+.hotGoods .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotGoodsName {
+  font-size: 24rpx;
+  color: #666;
+  line-height: 54rpx;
+}
+
+.hotGoodsPrice {
+  font-size: 28rpx;
+  color: #000;
+  line-height: 28rpx;
+}
+
+.product {
+  padding-bottom: 50rpx;
+}
+
+.productPic {
+  width: 710rpx;
+  height: 349rpx;
+}
+
+.productPic image {
+  width: 100%;
+  height: 100%;
+}
+
+.product .productName {
+  font-size: 26rpx;
+  color: #000;
+  line-height: 26rpx;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+
+.product .productName .productPrice {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 28rpx;
+  color: #000;
+}
+
+.product .productDescription {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.GuessYouLike .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.GuessYouLike .content .likePic {
+  width: 230rpx;
+  height: 210rpx;
+}
+
+.GuessYouLike .content .likePic image {
+  width: 100%;
+  height: 100%;
+}
+
+.like {
+  padding-bottom: 50rpx;
+}
+
+.likeName {
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 10rpx;
+  margin-bottom: 18rpx;
+}
+
+.likePrice {
+  font-size: 28rpx;
+  color: #000;
+}
+
+.dot {
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  background: #000;
+  border-radius: 50%;
+  margin: 6rpx;
+}
+
+.scrollBlock {
+  width: 100%;
+  height: 278rpx;
+  padding-bottom: 50rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.Film {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.scrollCon {
+  width: 460rpx;
+  height: 278rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+  box-shadow: 8rpx 8rpx 10rpx #999;
+}
+
+.scrollCon image {
+  width: 100%;
+  height: 100%;
+}
+
+.ani {
+  transform: scale(1.1);
+}
+
+.noAni {
+  transform: scale(0.88);
+}

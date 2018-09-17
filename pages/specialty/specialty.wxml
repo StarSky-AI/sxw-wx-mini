@@ -1,0 +1,45 @@
+<!--pages/specialty/specialty.wxml-->
+<view class="box" id="specialty">
+  <view class="head">
+    <image class="headbg" src="/../../pageImg/picture@2x.png">
+      <view class="item1 item">
+        <view class="gift">
+          <image src="../../pageImg/all.png"></image>
+        </view>
+      </view>
+      <view class="item2 item">干货</view>
+      <view class="item3 item">
+        <view class="item3Text">
+          <text>酒水饮料</text>
+          <text>零食点心</text>
+        </view>
+
+      </view>
+      <view class="item4 item">茶叶</view>
+    </image>
+
+  </view>
+  <view>
+    <view class="priceTitle">
+      <view class="moren active">默认</view>
+      <text class="jiage">价格</text>
+      <image src="../../pageImg/default_sort@2x.png" class="jigeImg"></image>
+      <text class="sales">销量</text>
+      <image src="../../pageImg/down@1x.png" class="salesImg"></image>
+    </view>
+
+  </view>
+  <view class="hotGoods same">
+    <view class="content">
+      <view wx:for="{{specialtyUrls}}" wx:key="{{index}}" class="hotPic">
+        <navigator url="../goodsDetail/goodsDetail">
+          <view class="pic">
+            <image src="{{item.img}}" />
+          </view>
+          <view class="hotGoodsName">{{item.name}}</view>
+          <view class="hotGoodsPrice">￥{{item.price}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

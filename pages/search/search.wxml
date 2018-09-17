@@ -1,0 +1,28 @@
+<!--pages/search/search.wxml-->
+<view class="box">
+  <view class="searchBox">
+    <view class="searchRecord">
+      <text class="searchText">{{text1}}</text>
+    </view>
+    <view class="searchList" wx:for="{{text2}}" wx:key="{{index}}">
+      <view class="searchNum">
+        <text>{{item}}</text>
+      </view>
+    </view>
+    <view class="clear"></view>
+  </view>
+   <view class="searchBox">
+  <view class="searchRecord">
+    <text class="searchText">{{text3}}</text>
+    <view class="searchDelete">
+      <image src="../../pageImg/delete.png"></image>
+    </view>
+  </view>
+  <view class="searchList" wx:for="{{text4}}" wx:key="{{index}}">
+    <view class="searchNum">
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view> 
+
+</view>

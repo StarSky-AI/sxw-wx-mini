@@ -1,0 +1,322 @@
+.box {
+  background: #e8e8e8;
+  padding-bottom: 120rpx;
+}
+
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80rpx;
+  z-index: 101;
+  background: rgb(255, 255, 255);
+}
+
+.navigation .navImg {
+  width: 88rpx;
+  height: 62rpx;
+  position: absolute;
+  left: 50%;
+  top: 12rpx;
+  margin-left: -44rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  display: flex;
+}
+
+.Elevator {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 0;
+  justify-content: space-around;
+}
+
+.Elevator span {
+  display: block;
+  font-size: 30rpx;
+  padding: 0 20rpx 18rpx 20rpx;
+}
+
+.Elevator .active {
+  border-bottom: 4rpx solid #000;
+}
+
+.banner, .banner-item, .banner-item image {
+  width: 100%;
+  height: 878rpx;
+}
+
+.wx-swiper-dots {
+  width: 136rpx;
+  padding: 10rpx 0;
+  border-radius: 40rpx;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.goodsInfo {
+  height: 216rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding-left: 50rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.goodsInfo .goodsName {
+  font-size: 34rpx;
+  line-height: 34rpx;
+  color: #000;
+  font-weight: bolder;
+  margin-top: 30rpx;
+}
+
+.goodsInfo .goodsPrice {
+  font-size: 28rpx;
+  color: #ff7070;
+  font-weight: bolder;
+  margin-top: 30rpx;
+}
+
+.goodsInfo .service {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 24rpx;
+  color: #676767;
+  margin-top: 34rpx;
+}
+
+.goodsInfo .service>view {
+  display: flex;
+  align-items: center;
+}
+
+.goodsInfo .service text {
+  margin-right: 64rpx;
+  margin-left: 10rpx;
+}
+
+.Spec {
+  padding: 0 50rpx;
+  box-sizing: border-box;
+  height: 275rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.Spec .spec-seleted {
+  height: 119rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34rpx;
+  font-weight: bolder;
+  color: #000;
+}
+
+.Spec .spec-seleted image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.disCount {
+  height: 154rpx;
+  display: flex;
+  align-items: center;
+}
+
+.disCount .Square {
+  width: 78rpx;
+  height: 78rpx;
+  border: 1px solid #65696c;
+  font-size: 24rpx;
+  color: #64676c;
+  text-align: center;
+  line-height: 78rpx;
+}
+
+.disCount .active {
+  width: 498rpx;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  color: rgb(128, 128, 128);
+  margin-left: 22rpx;
+}
+
+.eval {
+  padding: 0 50rpx 37rpx 50rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.eval .title {
+  height: 120rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34rpx;
+  font-weight: bolder;
+  color: #000;
+  margin-bottom: 30rpx;
+}
+
+.eval .title image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.userHeader {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.userHeader image {
+  width: 100%;
+  height: 100%;
+}
+
+.conTitle {
+  height: 60rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conTitle .left {
+  display: flex;
+}
+
+.userName {
+  font-size: 24rpx;
+  line-height: 60rpx;
+  color: rgb(112, 112, 112);
+  margin-left: 32rpx;
+}
+
+.userTime {
+  font-size: 22rpx;
+  line-height: 60rpx;
+  color: rgb(204, 204, 204);
+}
+
+.langAndImage {
+  padding-left: 90rpx;
+}
+
+.evalCon {
+  font-size: 26rpx;
+  color: rgb(112, 112, 112);
+  margin-top: 30rpx;
+}
+
+.details {
+  font-size: 20rpx;
+  color: #ccccce;
+  margin-top: 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.image {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.goodsPic {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 16rpx;
+}
+
+.goodsPic image {
+  width: 100%;
+  height: 100%;
+}
+
+.goodsMaxPic {
+  margin-bottom: 20rpx;
+}
+
+.MaxPic {
+  width: 100%;
+}
+
+.policy {
+  height: 120rpx;
+  padding: 0 50rpx;
+  background: #fff;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 34rpx;
+  font-weight: bolder;
+  color: #000;
+}
+
+.policy image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.addCar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 99rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx solid #eaeaea;
+  background: #fff;
+  z-index: 100;
+}
+
+.addCar .left {
+  display: flex;
+  align-items: center;
+  padding-left: 50rpx;
+}
+
+.shopCar, .shopSc {
+  width: 62rpx;
+  height: 62rpx;
+}
+
+.shopSc {
+  margin-left: 60rpx;
+}
+
+.shopCar image, .shopSc image {
+  width: 100%;
+  height: 100%;
+}
+
+.addCar .right {
+  height: 100%;
+  display: flex;
+}
+
+.addCar .right>view {
+  width: 246rpx;
+  height: 100%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #000;
+}
+
+.addCar .right .contor1 {
+  background: #ff5600;
+}
+
+.addCar .right .contor2 {
+  background: #ffda55;
+}

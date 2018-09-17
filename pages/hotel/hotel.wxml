@@ -1,0 +1,58 @@
+<!--pages/business/business.wxml-->
+<view class="box" id="hotel">
+  <scroll-view scroll-x="true">
+    <view class="goodsClass" style="width:{{goodsClassWidth}}">
+      <view class='content'>
+        <view class='option {{currentSection==index?"active":""}}' wx:for="{{tabTitle}}" wx:key="{{tabTitle}}" data-index="{{index}}" bindtap='changeSel'>
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <!--商品展示轮播  -->
+  <swiper indicator-dots="true" class="swiper-banner" circular="true" indicator-color="#fff" indicator-active-color="#000" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="hotGoods same">
+    <view class="title">
+
+      <view class="titleLeft">
+        <view class="arrowl">
+          <image src="../../pageImg/arrowl.png" />
+        </view>
+        <text class="hot">精选活动</text>
+      </view>
+      <view class="titleRight">
+        <view class="text">全部活动</view>
+        <view class="arrow">
+          <image src="../../pageImg/arrow@2x.png" />
+        </view>
+      </view>
+    </view>
+    <!-- 精选活动产品展示  -->
+    <view class="hotelDetail">
+      <view class="hotelList"  wx:for="{{hotelUrls}}" wx:key="{{index}}">
+        <view class="hotelImg">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="hotelText">
+          <view class="hotelTitle">
+            <text class="hotelH1">{{item.name}}</text>
+          </view>
+          <text class="hotelH2">{{item.text}}</text>
+          <view class="hotelPrice">
+            <view class="hotelM">
+              <text class="hotelMM">¥ {{item.price}} </text>
+              <text class="hotelH2">起</text>
+            </view>
+            <text class="hotelDistance">{{item.map}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

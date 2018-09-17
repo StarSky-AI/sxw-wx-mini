@@ -1,0 +1,108 @@
+<view class="box">
+  <swiper class="banner" indicator-dots="true" circular="true" indicator-color="rgb(255,255,255)" indicator-active-color="rgb(20,20,20)" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{key++}}">
+      <swiper-item class="banner-item">
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="navigation" style="opacity:{{opacity}}" wx:if="{{navShow}}">
+     <view class="navImg">
+      <image src="../../pageImg/banner3.jpg" mode="widthFix"/>
+    </view> 
+    <view class="Elevator">
+      <span class="{{position==0?'active':''}}" data-position="0" bindtap="scroll">商品</span>
+      <span class="{{position==1?'active':''}}" data-position="1" bindtap="scroll">评论</span>
+      <span class="{{position==2?'active':''}}" data-position="2" bindtap="scroll">详情</span>
+    </view>
+  </view>
+  <view class="goodsInfo">
+    <view class="goodsName">藏仙虫草-黄巾茶20g</view>
+    <view class="goodsPrice">￥1309.00</view>
+    <view class='service'>
+      <view>
+        <icon type="success" size="10" color="#666" />
+        <text>全场包邮</text>
+      </view>
+      <view>
+        <icon type="success" size="10" color="#666" />
+        <text>源头直供</text>
+      </view>
+      <view>
+        <icon type="success" size="10" color='#666' />
+        <text>精品保障</text>
+      </view>
+    </view>
+  </view>
+  <view class="Spec">
+    <view class="spec-seleted">
+      <text>请选择规格</text>
+      <image src='../../pageImg/返回拷贝.png'></image>
+    </view>
+    <!-- <view class='disCount'>
+      <view class="Square">服务</view>
+      <view class='active'>
+        满300元减20; 满50元包邮; 10天无理由退换; 30天质量问题退换; 买多少送多少积分。
+      </view>
+    </view> -->
+  </view>
+  <view class='eval'>
+    <view class="title">
+      <text>评价与晒图 ({{Number}})</text>
+      <image src='../../pageImg/返回拷贝.png'></image>
+    </view>
+    <view class="content">
+      <view class='conTitle'>
+        <view class='left'>
+          <view class="userHeader">
+            <image src='../../pageImg/header.jpg'></image>
+          </view>
+          <view class='userName'>
+            {{username}}
+          </view>
+        </view>
+        <view class='userTime'>
+          {{time}}
+        </view>
+      </view>
+      <view class="langAndImage">
+        <view class="evalCon">
+          {{evalCon}}
+        </view>
+        <view class='details'>
+          规格:
+          <text>20ml</text>
+        </view>
+        <view class='image'>
+          <view class="goodsPic" wx:for="{{evalArrs}}" wx:key="{{key++}}">
+            <image src="{{item}}" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='goodsMaxPic'>
+    <image class='MaxPic' mode="widthFix" src='../../pageImg/goodsMaxPic.jpg'></image>
+  </view>
+  <view class='SpecMaxPic'>
+    <image class='MaxPic' mode="widthFix" src='../../pageImg/SpecMaxPic.png'></image>
+  </view>
+  <view class='policy'>
+    <text>购物政策</text>
+    <image src='../../pageImg/返回拷贝.png'></image>
+  </view>
+  <view class='addCar'>
+    <view class='left'>
+      <view class='shopCar'>
+        <image src="../../pageImg/购物车.png"></image>
+      </view>
+      <view class="shopSc" bindtap="goCollection">
+        <image src="../../pageImg/形状1.png"></image>
+      </view>
+    </view>
+    <view class='right'>
+      <view class='contor1' bindtap="goCart">加入购物车</view>
+      <view class='contor2'>立即购买</view>
+    </view>
+  </view>
+</view>

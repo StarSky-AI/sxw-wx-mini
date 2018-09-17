@@ -1,0 +1,72 @@
+<view class="box">
+  <view class="addAddress">
+   <view class="add">
+      <image src="../../pageImg/矩形23.png" />
+    </view>
+    <view>添加收货地址</view>
+  </view> 
+   <view class="goodsList">
+    <view class="option" wx:for="{{goods}}" wx:key="{{index}}">
+      <view class="header">
+        订单12
+      </view>
+      <view class="content">
+        <view class="goods" wx:for="{{item.goodsArray}}" wx:key="{{index}}">
+          <view class="goodsPic fll">
+            <image src="{{item.img}}"/>
+          </view>
+          <view class="goodsDescription">
+            <view class="goodsName">{{item.name}}</view>
+            <view class="goodsSpec">{{item.Spec}}</view>
+            <view class="goodsprice">￥{{item.price}}</view>
+          </view>
+          <view class="goodsNumber">
+            <view>
+              <image src="../../pageImg/矩形1@2x.png" />
+            </view>
+            <input value="{{item.number}}" />
+            <view>
+              <image src="../../pageImg/矩形13@2x.png" />
+            </view>
+          </view>
+        </view>
+        <view class="freight">
+          <text>运费</text>
+          <view>￥{{item.freight}}</view>
+        </view>
+        <view class="Subtotal">
+          <text>共6件</text>
+          <view>小计:
+            <text>￥888.00</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view> 
+</view>
+<view class="bottom">
+  <view class="submit"  bindchange="bindPickerChange">确认</view>
+  <view class="totalPrice">
+    合计:
+    <text>￥99999.00</text>
+  </view>
+</view>
+
+ 
+   <view class="page-body">
+    <view class="page-section">
+      <view class="weui-cells__title">地区选择器</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="weui-input">{{array[index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view> 

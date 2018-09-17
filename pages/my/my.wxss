@@ -1,0 +1,174 @@
+.box{
+	background: #fafafa;
+}
+.MyInfo{
+	border-top:1rpx solid #ebebeb;
+	border-bottom:1rpx solid #ebebeb;
+	height: 138rpx;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+}
+.MyInfo .left{
+	display: flex;
+}
+.MyInfo .header{
+	width: 100rpx;
+	height: 100rpx;
+	margin-right: 24rpx;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.MyInfo .header image{
+	width: 100%;
+	height: 100%;
+}
+.textInfo{
+	font-size: 26rpx;
+	color: #000;
+	font-weight: bolder;
+}
+.textInfo .first{
+	margin-bottom:20rpx;
+	font-size: 28rpx;
+}
+.MyInfo .right{
+	display:flex; 
+}
+.code{
+	width: 37rpx;
+	height: 37rpx;
+	margin-right:24rpx;
+}
+.code image{
+	width: 100%;
+	height: 100%;
+}
+.return{
+	width: 30rpx;
+	height: 30rpx;
+}
+.return image{
+	width: 100%;
+	height: 100%;
+}
+.same{
+	border-top: 1rpx solid #ebebeb;
+	border-bottom: 1rpx solid #ebebeb;
+	margin-top:20rpx; 
+	background: #fff;
+}
+.same .title{
+	height: 100rpx;
+	padding: 0 30rpx;
+	box-sizing: border-box;
+	border-bottom: 1rpx solid #ebebeb;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 28rpx;
+	color: #000;
+}
+.same .title .return{
+	width: 30rpx;
+	height: 30rpx;
+}
+.same .title .return image{
+	width: 100%;
+	height: 100%;
+}
+.same .right{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.same .right text{
+	margin-right: 40rpx;
+	font-size: 24rpx;
+	color: rgb(141,141,141);
+}
+.same .right .return{
+	position: absolute;
+	top: 4rpx;
+	right: 0;
+}
+.same .bottom{
+	padding: 0 80rpx 0 77rpx;
+	height: 140rpx;
+}
+.Dandu{
+	margin-top: 20rpx;
+	padding-left: 30rpx;
+	box-sizing: border-box; 
+	border-top:1rpx solid #ebebeb;
+  border-bottom:1rpx solid #ebebeb;
+	background: #fff;
+}
+.Dandu .item{
+	padding-right:30rpx;
+	box-sizing: border-box;
+	height: 99rpx;
+	border-bottom: 1rpx solid #ebebeb;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 30rpx;
+	color: #000;
+}
+.Dandu .return{
+	width: 30rpx;
+	height: 30rpx;
+}
+.Dandu .return image{
+	width: 100%;
+	height: 100%;
+}
+.right40{
+	margin-right: 40rpx;
+	font-size: 24rpx;
+	color: rgb(128,128,128);
+}
+.rela{
+	position: relative;
+}
+.abs{
+	position: absolute;
+	right: 0;
+	top:4rpx;
+}
+.optionSel{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 24rpx;
+	color: rgb(78,78,78);
+}
+.optionSel .option{
+	width: 72rpx;
+	height: 84rpx;
+	position: relative;
+}
+.optionSel .option>view{
+	width: 42rpx;
+	height: 44rpx;
+	margin-bottom: 22rpx;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -20rpx;
+}
+.optionSel .option>view image{
+	width: 100%;
+	height: 100%;
+}
+.optionSel .option text{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+

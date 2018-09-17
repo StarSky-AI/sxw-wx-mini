@@ -1,0 +1,71 @@
+<!--pages/new/new.wxml-->
+<!--pages/business/business.wxml-->
+<view class="box">
+  <!--商品展示轮播  -->
+  <swiper indicator-dots="true" class="swiper-banner" circular="true" indicator-color="#fff" indicator-active-color="#000" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="newButton">
+  <button class="goback">返回顶部</button>
+  </view>
+  <view class="hotGoods same">
+    <view class="title">
+
+      <view class="titleLeft">
+        <view class="arrowl">
+          <image src="../../pageImg/arrowl.png" />
+        </view>
+        <text class="hot">最新上新</text>
+      </view>
+    </view>
+    <!-- 精选活动产品展示  -->
+    <view class="hotelDetail">
+      <view class="hotelList"  wx:for="{{newUrls}}" wx:key="{{index}}">
+        <view class="hotelImg">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="hotelText">
+          <view class="hotelTitle">
+            <text class="hotelH1">{{item.name}}</text>
+          </view>
+          <text class="hotelH2">{{item.text}}</text>
+          <view class="hotelPrice">
+            <view class="hotelM">
+              <text class="hotelMM">¥ {{item.price}} </text>
+            </view>
+            <button class="hotelDistance">立即抢购</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="hotGoods same">
+    <view class="title">
+        
+      <view class="titleLeft">
+      <view class="arrowl">
+      <image src="../../pageImg/arrowl.png"/>
+      </view>
+        <text class="hot">精选活动</text>
+      </view>
+      <view class="titleRight">
+        <view class="text">全部活动</view>
+        <view class="arrow">
+          <image src="../../pageImg/arrow@2x.png"/>
+        </view>
+      </view>
+    </view>
+    <view class="content">
+      <view wx:for="{{newUrls}}" wx:key="{{index}}" class="hotPic">
+        <view class="pic"><image src="{{item.img}}"/></view>
+        <view class="hotGoodsName">{{item.name}}</view>
+        <view class="hotGoodsPrice">￥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>

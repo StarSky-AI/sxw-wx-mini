@@ -1,0 +1,33 @@
+<view class="box">
+
+	 <view class="address" wx:for="{{address}}" wx:key="{{index}}"> 
+		<view class="info">
+			<view>
+				<text class="name">{{item.name}}</text>
+				<text class="phone">{{item.phone}}</text>
+			</view>
+			<view class="addre">{{item.address}}{{item.shopdetail}}</view>
+		 </view> 
+		<view class="contor" name='sele'>
+			<view class="left">
+				<view class="sel">
+					<image wx:if="{{item.default}}" src="../../pageImg/椭圆1拷贝2@2x.png"/>
+					<image wx:if="{{!item.default}}" src="../../pageImg/勾选@2x.png"/>
+				</view>
+				<view class="default">
+					默认地址
+				</view>
+			</view>
+			<view class="right" bindtap='toedit'>
+				编辑
+			</view>
+		</view>
+	</view>
+</view>
+
+<navigator class="addAdd" hover-class="link-hover" bindtap="toaddress">
+	<view class="pic">
+		<image src="../../pageImg/矩形1.png"/>
+	</view>
+	<view>添加收货地址</view>
+</navigator>

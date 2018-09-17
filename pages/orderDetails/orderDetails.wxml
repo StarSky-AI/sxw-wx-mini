@@ -1,0 +1,62 @@
+<view class="box">
+	<view class="orderInfo">
+		<view class="orderNumber">订单 : <text> 3136618460</text></view>
+		<view class="orderTime">
+			<view class="time">
+				下单时间 : 2017-11-28 17:30:12
+			</view>
+			<view class="Status">
+				待付款
+			</view>
+		</view>
+	</view>
+	<view class="person">
+		收货人
+	</view>
+	<view class="personInfo">
+		<view class="personName">孙贝 <text> 182****1168</text></view>
+		<view class="personAddress">浙江省杭州市滨江区华盛达广场1602</view>
+	</view>
+	<view class="person bil">
+		商品清单
+	</view>
+	<view class="goods">
+		<view class="option {{index!=goods.length-1?'borBottom':''}}" wx:for="{{goods}}" wx:key="{{index}} ">
+			<view class="left">
+				<view class="pic">
+					<image src="{{item.img}}"/>
+				</view>	
+				<view class="info">
+					<view class="name">{{item.name}}</view>
+					<view class="spec">{{item.spec}}</view>
+				</view>
+			</view>
+			<view class="right">
+				<view class="price">￥<text>{{item.price}}</text></view>
+				<view class="number">x<text>{{item.number}}</text></view>
+			</view>
+		</view>
+	</view>
+	<view class="total">
+		<view class="totalPrice">
+			<text>商品总价</text>
+			<text>￥296.00</text>
+		</view>
+		<view>
+			<text>运费</text>
+			<text>￥296.00</text>
+		</view>
+	</view>
+</view>
+<view class="bottom">
+	<view class="left">
+		合计: <text>￥302.00</text>
+	</view>
+	<view class="right">
+		<view class="cancel">取消订单</view>
+		<view class="pay">立即支付</view>
+    <!-- <view class="pay">立即评价</view> -->
+    <!-- <view class="pay">催单</view> -->
+    <!-- <view class="pay">再次购买</view> -->
+	</view>
+</view>

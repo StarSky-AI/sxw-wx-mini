@@ -1,0 +1,21 @@
+<!--pages/assortment/assortment.wxml-->
+<view class="box">
+  <view  class="boxLeft" >
+  <view wx:for="{{text}}" wx:key="index">
+    <view class="list">
+      <text>{{item}}</text>
+    </view>
+  </view>
+  </view>
+  <view class="boxDeatil">
+   <view class="activeText">
+   <text>—  活动专区  —</text>
+   </view>
+   <view class="pics" wx:for="{{goods}}" wx:key="{{index}}">
+    <view class="picList">
+    <image src="{{imgurl}}{{item.goodsImg}}"></image>
+    </view>
+   </view>
+  </view>
+  <button bindtap="tuijian">点我呀</button>
+</view>

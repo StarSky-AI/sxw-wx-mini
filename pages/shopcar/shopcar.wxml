@@ -1,0 +1,107 @@
+<view class="box">
+  <view class="goodsSection">
+    <scroll-view wx:for="{{goodsList}}" scroll-x="true" class='goods' wx:key='{{item.id}}' scroll-left="{{scrollLeft}}">
+      <view class='content'>
+        <view class='leftSeion'>
+          <view class='top'>
+            <view class='check' bindtap='changeIcon' data-id="{{item.id}}">
+              <image wx:if="{{!item.selected}}" src="../../pageImg/椭圆1拷贝2@2x.png" class="checkIcon"></image>
+              <image wx:if="{{item.selected}}" src="../../pageImg/勾选@2x.png" class="checkIcon"></image>
+            </view>
+            <view class='seleNum'>
+              <span class="reduce" bindtap="reduce" data-id="{{item.id}}">
+                <image src="../../pageImg/矩形1@2x.png" class="reduce-image"></image>
+              </span>
+              <input class="num" type="text" value="{{item.Number}}" maxlength="3" bindblur="modifi" data-id="{{item.id}}"></input>
+              <span class="add" bindtap="add" data-id="{{item.id}}">
+                <image src="../../pageImg/矩形13@2x.png" class="add-image"></image>
+              </span>
+            </view>
+          </view>
+          <view class="bottom">
+            <view class='img'>
+              <image src='../../pageImg/chide.jpg' class='goodsImg'></image>
+            </view>
+            <view class="description">
+              <view class="title">{{item.title}}</view>
+              <view class="standard">{{item.standard}}</view>
+              <view class="price">
+                <text>￥{{item.price}}</text>
+                <text class="goodsNumber">x{{item.Number}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="rightSeion">
+          <view class="Collection">收藏</view>
+          <view class="delete" bindtap="del" data-id="{{item.id}}">删除</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="footer">
+    <view class="allCheck" bindtap='changeAllcheckIcon'>
+      <image wx:if="{{!AllCheck}}" src="../../pageImg/椭圆1拷贝2@2x.png" class="checkIcon"></image>
+      <image wx:if="{{AllCheck}}" src="../../pageImg/勾选@2x.png" class="checkIcon"></image>
+    </view>
+
+    <view class="right">
+      <text class='total'>合计:<text class="totalPrice">￥{{total}}</text></text>
+      <view bindtap="show">去结算</view>
+      <view bindtap="show" hidden="{{flag}}">请选择：{{citys[index]}}</view>
+    </view>
+  </view>
+</view>
+<!--  弹出层  -->
+<view hidden="{{flag}}">
+  <view class='modal-list'></view>
+  <view class="modal-box">
+    <view class='zf_popup'>
+      <view class='mode'>
+        <text>请选择支付方式</text>
+        <image class='zf_delete' src='../../pageImg/zf_delete.png' bindtap="hide"></image>
+      </view>
+       <!-- <view class='zf_parent' wx:for='{{zhifu}}' wx:key='{{item.index}}'>
+        <view class='zf_item'>
+          <image class='zf_logo' src='{{item.img}}'></image>
+          <text class='zf_text'>{{item.name}}</text>
+            <view class='zf_selected' bindtap='changeselect1'>
+            <image wx:if="{{Default1}}" src="../../pageImg/椭圆1拷贝2@2x.png" />
+            <image wx:if="{{!Default1}}" src="../../pageImg/勾选@2x.png" />
+          </view> 
+        </view>
+      </view>  -->
+       <view class='zf_parent'>
+        <view class='zf_item'>
+          <image class='zf_logo' src='../../pageImg/zhifubao.png'></image>
+          <text class='zf_text'>微信支付</text>
+          <view class='zf_selected' bindtap='changeselect1'>
+            <image wx:if="{{Default1}}" src="../../pageImg/椭圆1拷贝2@2x.png" />
+            <image wx:if="{{!Default1}}" src="../../pageImg/勾选@2x.png" />
+          </view>
+        </view>
+      </view>
+      <view class='zf_parent'>
+        <view class='zf_item'>
+          <image class='zf_logo' src='../../pageImg/weixin.png'></image>
+          <text class='zf_text'>微信支付</text>
+          <view class='zf_selected' bindtap='changeselect2'>
+            <image wx:if="{{Default2}}" src="../../pageImg/椭圆1拷贝2@2x.png" />
+            <image wx:if="{{!Default2}}" src="../../pageImg/勾选@2x.png" />
+          </view>
+        </view>
+      </view>
+      <view class='zf_parent'>
+        <view class='zf_item'>
+          <image class='zf_logo' src='../../pageImg/bank.png'></image>
+          <text class='zf_text'>广发银行</text>
+          <view class='zf_selected' bindtap='changeselect3'>
+            <image wx:if="{{Default3}}" src="../../pageImg/椭圆1拷贝2@2x.png" />
+            <image wx:if="{{!Default3}}" src="../../pageImg/勾选@2x.png" />
+          </view>
+        </view>
+      </view> 
+      <view class='zf_btn'>立即支付</view>
+    </view>
+  </view>
+</view>

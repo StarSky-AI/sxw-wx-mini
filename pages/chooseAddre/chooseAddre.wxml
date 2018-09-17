@@ -1,0 +1,29 @@
+<view class = "item" wx:for="{{list}}" wx:key="id"  bindtap="toCleanOrder" data-index="{{item.index}}" data-id="{{item.id}}" data-name="{{item.name}}" data-tel="{{item.tel}}" data-addre="{{item.addre}}" data-door="{{item.door}}">
+  <image src ="{{item.image}}"  mode = "widthFix"/>
+<view class = "info">
+<text>{{item.name}}：{{item.tel}}</text>
+<text  >地址：{{item.addre}}{{item.door}}</text>
+<br/>
+ <view class="set" bindtap="change" name="sele">
+    <view class="sel">
+      <image wx:if="{{Default}}" src="../../pageImg/椭圆1拷贝2@2x.png" />
+      <image wx:if="{{!Default}}" src="../../pageImg/勾选@2x.png" />
+    </view>
+    <view class="default">
+      默认地址
+    </view>
+
+  </view>
+</view>
+<view class = "modify" bindtap="toModifyAddre" data-index="{{item.index}}" data-id="{{item.id}}" data-name="{{item.name}}" data-tel="{{item.tel}}"  data-addre="{{item.addre}}"  data-door="{{item.door}}">
+<text class='bianji' mode = "widthFix" bindtap = "detete">编辑</text>
+
+</view>
+</view>
+
+<view class="addAdd" hover-class="link-hover" bindtap="addAddre">
+	<view class="pic">
+		<image src="../../pageImg/矩形1.png"/>
+	</view>
+	<view class='btn'>添加收货地址</view>
+</view>

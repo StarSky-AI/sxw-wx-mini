@@ -1,0 +1,30 @@
+<!--pages/authentication/authentication.wxml-->
+<view class="box">
+  <view class="science">
+    <view class="authImg">
+      <view class="authImage">
+        <image src="../../pageImg/农科院.png" />
+      </view>
+    </view>
+    <view class="authText1">
+      <text>{{text1}}</text>
+    </view>
+    <text class="authText2">{{text2}}</text>
+    <view class="returnImg">
+      <view class="returnImage">
+        <image src="../../pageImg/返回拷贝3.png" />
+      </view>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="product" wx:for="{{newProduct}}" wx:key="{{index}}">
+      <view class="productPic">
+        <image src="{{item.img}}" />
+      </view>
+      <text class="contentText">{{item.text}}</text>
+    </view>
+  </view>
+
+  
+</view>

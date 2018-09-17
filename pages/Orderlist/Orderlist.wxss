@@ -1,0 +1,118 @@
+.box{
+	background: #f5f5f5;
+}
+.box .tab{
+	width:100%;
+	height:80rpx;
+	line-height:80rpx;
+	background: #fff;
+	display:flex;
+	justify-content: space-around;
+	font-size:28rpx;
+	color:#808080;
+}
+.box .tab>view{
+	padding:0 24rpx 10rpx 24rpx;
+}
+.cur{
+	border-bottom:6rpx solid #000;
+	color:#000;
+}
+.option{
+	margin-top:30rpx;
+	background: #fff;
+	padding-left:30rpx;
+	box-sizing: border-box;
+	border-bottom:1rpx solid #eaeaea;
+}
+.option .title{
+	height:87rpx;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size:24rpx;
+	color:#808080;
+}
+.option .content{
+	height:159rpx;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.borB{
+	border-bottom:1rpx solid #eaeaea;
+	padding-right:30rpx;
+	box-sizing: border-box;
+}
+.content .left{
+	display:flex;
+}
+.content .left .pic{
+	width:76rpx;
+	height:76rpx;
+	margin-right: 24rpx;
+}
+.content .left .pic image{
+	width:100%;
+	height:100%;
+}
+.content .left .name{
+	font-size:28rpx;
+	line-height:28rpx;
+	color:#000;
+	font-weight:bold;
+}
+.content .left .spec{
+	width:56rpx;
+	height:28rpx;
+	line-height:28rpx;
+	background: #f5f5f5;
+	font-size:16rpx;
+	color:#868686;
+	text-align:center;
+	margin-top: 20rpx;
+}
+.content .right .price{
+	font-size:28rpx;
+	line-height:28rpx;
+	color:#000;
+	font-weight:bold;
+}
+.content .number{
+	font-size:24rpx;
+	line-height:24rpx;
+	color:#808080;
+	text-align:right;
+	margin-top:20rpx;
+}
+.option .total{
+	height:85rpx;
+	line-height:85rpx;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right:30rpx;
+	box-sizing: border-box;
+}
+.option .total .num{
+	font-size:24rpx;
+	color:#808080;
+}
+.option .total .prc{
+	font-size:22rpx;
+	color:#000;
+	font-weight:bold;
+}
+.option .total .special{
+	font-size:20rpx;
+	color:#808080;
+}
+.option .total .button{
+	width:140rpx;
+	height:52rpx;
+	background:#ffd444;
+	text-align:center;
+	line-height:52rpx;
+	font-size:22rpx;
+	color:#000;
+}

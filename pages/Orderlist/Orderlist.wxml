@@ -1,0 +1,82 @@
+<view class="box">
+  <view class="tab">
+    <view wx:for="{{tab}}" wx:key="{{index}}" data-index="{{index}}" class="{{index==current?'cur':''}}" bindtap="change">{{item.option}}</view>
+  </view>
+  <view class="option">
+    <view class="title borB">
+      <view>订单 : 4057676460</view>
+      <view class="status">待发货</view>
+    </view>
+    <view class="content borB">
+      <view class="left">
+        <view class="pic">
+          <image src="../../pageImg/payPic1.png" />
+        </view>
+        <view class="info">
+          <view class="name">仙居碧绿-石斛花茶</view>
+          <view class="spec">200ml</view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="price">￥148.00</view>
+        <view class="number">x1</view>
+      </view>
+    </view>
+    <view class="total">
+      <view class="totalPrice">
+        <text class="num">共1件 合计 : </text>
+        <text class="prc">￥154.00 </text>
+        <text class="special"> (含运费 : ￥6.00元)</text>
+      </view>
+      <view class="button">
+        查看物流
+      </view>
+    </view>
+  </view>
+  <view class="option">
+    <view class="title borB">
+      <view>订单 : 4057676460</view>
+      <view class="status">待发货</view>
+    </view>
+    <view class="content borB">
+      <view class="left">
+        <view class="pic">
+          <image src="../../pageImg/payPic1.png" />
+        </view>
+        <view class="info">
+          <view class="name">仙居碧绿-石斛花茶</view>
+          <view class="spec">200ml</view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="price">￥148.00</view>
+        <view class="number">x1</view>
+      </view>
+    </view>
+    <view class="content borB">
+      <view class="left">
+        <view class="pic">
+          <image src="../../pageImg/payPic1.png" />
+        </view>
+        <view class="info">
+          <view class="name">仙居碧绿-石斛花茶</view>
+          <view class="spec">200ml</view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="price">￥148.00</view>
+        <view class="number">x1</view>
+      </view>
+    </view>
+    <view class="total">
+      <view class="totalPrice">
+        <text class="num">共1件 合计 : </text>
+        <text class="prc">￥154.00 </text>
+        <text class="special"> (含运费 : ￥6.00元)</text>
+      </view>
+      <view class="button">
+        查看物流
+      </view>
+    </view>
+  </view>
+</view>

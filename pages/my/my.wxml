@@ -1,0 +1,162 @@
+<view class="box">
+  <view class="MyInfo">
+    <view class="left">
+      <view class="header">
+        <image src="../../pageImg/header.jpg" />
+      </view>
+      <view class="textInfo">
+        <view class="first">Victory</view>
+        <view>15816881158</view>
+      </view>
+    </view>
+    <view class="right">
+      <view class="code">
+        <image src="../../pageImg/code.jpg" />
+      </view>
+      <view class="return">
+        <image src="../../pageImg/返回拷贝5.png" />
+      </view>
+    </view>
+  </view>
+  <view class="Myorder same">
+    <view class="title" bindtap="goOrderlist">
+      <view class="left">我的订单</view>
+      <view class="right">
+        <text>查看全部订单</text>
+        <view class="return">
+          <image src="../../pageImg/返回拷贝5.png" />
+        </view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="optionSel">
+        <view class="option">
+          <view>
+            <image src="../../pageImg/图层4拷贝.png" />
+          </view>
+          <text>待付款</text>
+        </view>
+        <view class="option">
+          <view>
+            <image src="../../pageImg/待发货.png" />
+          </view>
+          <text>待发货</text>
+        </view>
+        <view class="option">
+          <view>
+            <image src="../../pageImg/待收货.png" />
+          </view>
+          <text>待收货</text>
+        </view>
+        <view class="option">
+          <view>
+            <image src="../../pageImg/待评价.png" />
+          </view>
+          <text>待评价</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="MyLife same">
+    <view class="title">
+      <view class="left">我的生活</view>
+      <view class="right">
+        <text>查看全部订单</text>
+        <view class="return">
+          <image src="../../pageImg/返回拷贝5.png" />
+        </view>
+      </view>
+    </view>
+    <view class="bottom">
+      <view class="optionSel">
+        <view class="option">
+          <view>
+            <image src="../../pageImg/图层4拷贝.png" />
+          </view>
+          <text>待付款</text>
+        </view>
+        <view class="option">
+          <view>
+            <image src="../../pageImg/未使用.png" />
+          </view>
+          <text>未使用</text>
+        </view>
+        <view class="option">
+          <view>
+            <image src="../../pageImg/已使用.png" />
+          </view>
+          <text>已使用</text>
+        </view>
+        <view class="option">
+          <view>
+            <image src="../../pageImg/待评价.png" />
+          </view>
+          <text>待评价</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="Dandu">
+    <view class='item'>
+      <view>我的收藏</view>
+      <view class="return">
+        <image src="../../pageImg/返回拷贝5.png"></image>
+      </view>
+    </view>
+    <view bindtap="toaddress" class='item'>
+      <view>我的收货地址</view>
+      <view class="return">
+        <image src="../../pageImg/返回拷贝5.png"></image>
+      </view>
+    </view>
+    <view class='item'>
+      <view>我的钱包</view>
+      <view class="return">
+        <image src="../../pageImg/返回拷贝5.png"></image>
+      </view>
+    </view>
+    <view class='bankcard item'>
+      <view>我的银行卡</view>
+      <view class="return">
+        <image src="../../pageImg/返回拷贝5.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="Dandu">
+    <!-- 客服服务  -->
+    <!-- <button open-type="contact"> 
+     <view>
+        <view>我的服务</view>
+        <view class="return">
+          <image src="../../pageImg/返回拷贝5.png"></image>
+        </view>
+      </view> 
+      </button> -->
+    <view class='item'>
+      <view>客服电话</view>
+      <view class="rela">
+        <text class="right40">周一至周五 9:00-17:30</text>
+        <view class="return abs">
+          <image src="../../pageImg/返回拷贝5.png" />
+        </view>
+      </view>
+    </view>
+    <view class='item'>
+      <view>设置</view>
+      <view class="return">
+        <image src="../../pageImg/返回拷贝5.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!--  五星好评实现  -->
+<view>
+  <view class="zan-font-16 my-ib" bindtap="myStarChoose">
+    <block wx:for="{{starMap}}">
+      <text wx:if="{{star>=index+1}}" style="padding-right: .5em" class="zan-c-red" data-star="{{index+1}}">★</text>
+      <text wx:if="{{star<index+1}}" style="padding-right: .5em" class="zan-c-gray-dark" data-star="{{index+1}}">☆</text>
+    </block>
+  </view>
+  <!--★-->
+  <text class="zan-c-gray-dark">{{starMap[star-1]}}</text>
+</view>

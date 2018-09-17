@@ -1,0 +1,58 @@
+<view class="box">
+	<view class="header">
+		<image src="../../pageImg/AccountDetails_01.jpg" class="header-image" />
+		<view class="userAvatar">
+			<image class="Avatar" src="../../pageImg/Avatar.jpg" mode="aspectFill"/>
+		</view>
+		<view class="text">
+			<text class="desc">您的消费总额</text><br/>
+			<text class="totalRMB">￥{{totalRMB}}</text>
+		</view>
+		<ul class="infoList">
+			<li class="option">
+				<view class="top">可用积分</view>
+				<view class="bottom">{{integral}}</view>
+			</li>
+			<li class="option">
+				<view class="top">可用U币</view>
+				<view class="bottom">{{coin}}</view>
+			</li>
+			<li class="option">
+				<view class="top">可用余额</view>
+				<view class="bottom">{{balance}}</view>
+			</li>
+			<li class="option last">
+				<view class="top">带赠送额</view>
+				<view class="bottom">{{give}}</view>
+			</li>
+		</ul>
+	</view>
+	<view class="content">
+		<view class="title">
+			<view class="left">
+				<view class="sortOrder">时间排序</view>
+				<view class="descending" bindtap="change" data-no="one">
+					<image wx:if="{{one}}" src="../../pageImg/排序下灰.png" />
+					<image wx:if="{{!one}}" src="../../pageImg/排序下黑.png" />
+				</view>
+				<view class="ascending" bindtap="change" data-no="two">
+					<image wx:if="{{two}}" src="../../pageImg/排序上灰.png" />
+					<image wx:if="{{!two}}" src="../../pageImg/排序上黑.png" />
+				</view>
+			</view>
+			<view class="right">
+				<input placeholder="2016-04-26" placeholder-style="color:#333"/>
+				<view class="FenG">-</view>
+				<input placeholder="2016-05-26"  placeholder-style="color:#333"/>
+				<view class="button">
+					筛选
+				</view>
+			</view>
+		</view>
+		<view class="list">
+			<view wx:for="{{data}}" wx:key="{{index}}" class="item {{index!==data.length-1?'borderBottom':''}}">
+				
+			</view>
+		</view>
+	</view>
+</view> 

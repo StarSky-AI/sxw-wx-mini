@@ -1,0 +1,97 @@
+page{
+  display: block;  
+  min-height: 100%;  
+  background-color:#f6f6f6;  
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color:#353535;
+}
+.item{
+  background-color: #fff;
+  border-bottom:1rpx solid #e0e0e0;
+  display: flex;
+  padding:20rpx;
+}
+.info{
+  font-size:27rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:85%;
+}
+.item image{
+  width:50rpx;
+  padding-top:15rpx;
+  margin:0 15rpx;
+}
+.bianji {
+  display:block;
+  padding-top:15rpx;
+  width:80rpx;
+}
+.text{
+  float:left;
+  margin-top:20rpx;
+}
+.left{
+  float:left;
+}
+.addAdd{
+	width:100%;
+	height:100rpx;
+	background:#202020;
+	position:fixed;
+	left:0;
+	bottom:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.addAdd .pic{
+	width:30rpx;
+	height:30rpx;
+	margin-right: 16rpx;
+}
+.addAdd .pic image{
+	width:100%;
+	height:100%;
+}
+.addAdd .btn{
+	font-size:30rpx;
+	line-height:30rpx;
+	color:#fff;
+}
+.selected{
+    width:584rpx;
+    height:100%;
+    font-size:28rpx;
+    line-height:98rpx;
+    color:#000;
+    font-weight:bolder;
+}
+.set{
+	display:flex;
+	font-size:24rpx;
+	color:#808080;
+	padding-left:34rpx;
+	margin-top:25rpx;
+  padding-bottom:20rpx;
+}
+.sel{
+	width:32rpx;
+	height:32rpx;
+  margin-top:-10rpx;
+	line-height:32rpx;
+  margin-left:-50rpx;
+	margin-right: 40rpx;
+}
+.sel image{
+	width: 100%;
+	height: 100%;
+}
+.input-placeholder {
+    color: rgb(204,204,204);
+}
+.visibility {
+   visibility:hidden;
+}

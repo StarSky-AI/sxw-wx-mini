@@ -1,0 +1,51 @@
+/* pages/assortment/assortment.wxss */
+
+.boxLeft {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+.list {
+  width: 200rpx;
+  height: 80rpx;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  line-height: 80rpx;
+  color: rgb(128, 128, 128);
+  border-bottom: 1rpx solid #fff;
+  font-size: 26rpx;
+}
+
+.list:hover {
+  background-color: #fff;
+}
+
+.activeText {
+  text-align: center;
+  padding-bottom: 10rpx;
+  font-size: 24rpx;
+}
+
+.boxDeatil {
+  float: right;
+  width: 72%;
+  padding-left:15rpx;
+}
+
+.pics {
+  width: 100%;
+  height: 100%;
+}
+
+.picList {
+  width: 156rpx;
+  height: 164rpx;
+  padding: 10rpx;
+  float: left;
+}
+
+.picList image {
+  width: 100%;
+  height: 100%;
+}

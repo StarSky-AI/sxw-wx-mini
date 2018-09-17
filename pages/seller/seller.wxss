@@ -1,0 +1,144 @@
+.box{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	z-index:-2;
+	background:#f5f5f5;
+}
+.header{
+	height:448rpx;
+	position:relative;
+	overflow:hidden;
+}
+.header-image{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:-1;
+}
+.userAvatar{
+	width:120rpx;
+	height:120rpx;
+	border-radius:50%;
+	overflow:hidden;
+	margin:105rpx auto 18rpx auto;
+}
+.userAvatar image{
+	width:100%;
+	height:100%;
+}
+.text{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	color:#fff;
+}
+.text .desc{
+	font-size:22rpx;
+	line-height:22rpx;
+}
+.text .totalRMB{
+	font-size:50rpx;
+	line-height:50rpx;
+	margin-top:16rpx;
+}
+.infoList{
+	display:flex;
+	justify-content:flex-start;
+	padding:0 48rpx;
+	margin-top:38rpx;
+	box-sizing:border-box;
+	color:#fff;
+}
+.infoList .option{
+	height:70rpx;
+	border-right:1rpx solid #fff;
+	flex:1;
+	font-size:22rpx;
+	line-height:35rpx;
+	text-align:center;
+}
+.infoList .last{
+	border-right:0 none;
+}
+.infoList .option .bottom{
+	color:#ffd444;
+}
+.content{
+	margin-top:20rpx;
+	border-top:1rpx solid #e5e5e5;
+}
+.content .title{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	height:80rpx;
+	padding: 0 20rpx;
+	box-sizing: border-box;
+	border-bottom:1rpx solid #f5f5f5;
+}
+.content .title .left{
+	display:flex;
+	height:50rpx;
+	align-items: center;
+	border-right:1rpx solid #000;
+}
+.sortOrder{
+	margin-right: 22rpx;
+	font-size:24rpx;
+	line-height:80rpx;
+	padding-bottom:4rpx;
+
+}
+.descending,.ascending{
+	width:29rpx;
+	height:28rpx;
+	margin-right:16rpx;
+}
+.descending image,.ascending image{
+	width:100%;
+	height:100%;
+	vertical-align:top;
+}
+.content .title .right{
+	display:flex;
+	align-items: center;
+}
+.content .title .right input{
+	width:148rpx;
+	height:39rpx;
+	border:1rpx solid #cfcfcf;
+	border-radius:10rpx;
+	font-size:22rpx;
+	text-align:center;
+}
+.content .title .FenG{
+	margin:0 10rpx;
+	color:#999;
+}
+.content .title .button{
+	width:80rpx;
+	height:40rpx;
+	margin-left:18rpx;
+	line-height:40rpx;
+	text-align:center;
+	background: #000;
+	color:#fff;
+	font-size:22rpx; 
+	border-radius:8rpx;
+}
+.list{
+	display:block;
+	padding-left:20rpx;
+	box-sizing: border-box;
+}
+.list .item{
+	height:112rpx;
+}
+.borderBottom{
+	border-bottom:1rpx solid #e5e5e5;
+}

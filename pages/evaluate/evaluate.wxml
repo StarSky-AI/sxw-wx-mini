@@ -1,0 +1,121 @@
+<!--pages/evaluate/evaluate.wxml-->
+<scroll-view class='pj_box'>
+  <view class='pj_item'>
+    <view class='pj_left'>
+      <view class='pj_img'>
+        <image src='../../pageImg/header.jpg'></image>
+      </view>
+    </view>
+    <view class='pj_right'>
+      <text class='pj_text1'>小章同学</text>
+      <text class='pj_text2'>1天前</text>
+
+      <view class='pj_line'></view>
+      <view>
+        <text class='pj_text3'>味道鲜美，赞赞赞！！！</text>
+      </view>
+      <view class='pj_guige'>
+        <text>规格：20ml</text>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot1.jpg'></image>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot2.jpg'></image>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot3.jpg'></image>
+      </view>
+
+    </view>
+  </view>
+  <view class='pj_item'>
+    <view class='pj_left'>
+      <view class='pj_img'>
+        <image src='../../pageImg/header.jpg'></image>
+      </view>
+    </view>
+    <view class='pj_right'>
+      <text class='pj_text1'>小章同学</text>
+      <text class='pj_text2'>2天前</text>
+
+      <view class='pj_line'></view>
+      <view>
+        <text class='pj_text3'>味道鲜美，赞赞赞！！！</text>
+      </view>
+      <view class='pj_guige'>
+        <text>规格：20ml</text>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot1.jpg'></image>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot2.jpg'></image>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot3.jpg'></image>
+      </view>
+
+    </view>
+  </view>
+  <view class='pj_item'>
+    <view class='pj_left'>
+      <view class='pj_img'>
+        <image src='../../pageImg/header.jpg'></image>
+      </view>
+    </view>
+    <view class='pj_right'>
+      <text class='pj_text1'>小章同学</text>
+      <text class='pj_text2'>3天前</text>
+
+      <view class='pj_line'></view>
+      <view>
+        <text class='pj_text3'>味道鲜美，赞赞赞！！！</text>
+      </view>
+      <view class='pj_guige'>
+        <text>规格：20ml</text>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot1.jpg'></image>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot2.jpg'></image>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot3.jpg'></image>
+      </view>
+
+    </view>
+  </view>
+  <view class='pj_item'>
+    <view class='pj_left'>
+      <view class='pj_img'>
+        <image src='../../pageImg/header.jpg'></image>
+      </view>
+    </view>
+    <view class='pj_right'>
+      <text class='pj_text1'>小章同学</text>
+      <text class='pj_text2'>4天前</text>
+
+      <view class='pj_line'></view>
+      <view>
+        <text class='pj_text3'>味道鲜美，赞赞赞！！！</text>
+      </view>
+      <view class='pj_guige'>
+        <text>规格：20ml</text>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot1.jpg'></image>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot2.jpg'></image>
+      </view>
+      <view class='pj_imglist'>
+        <image src='../../pageImg/hot3.jpg'></image>
+      </view>
+
+    </view>
+  </view>
+
+
+</scroll-view>

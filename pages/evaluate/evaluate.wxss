@@ -1,0 +1,83 @@
+/* pages/evaluate/evaluate.wxss */
+
+.pj_box {
+  background-color: rgb(250,250,250);
+}
+
+.pj_item {
+  display:block;
+  background-color: #fff;
+  padding: 50rpx 0;
+  height: 350rpx;
+  width:100%;
+  margin-top:20rpx;
+}
+
+.pj_left {
+  width: 90rpx;
+  height: 100%;
+  float: left;
+  padding-left: 60rpx;
+}
+
+.pj_img {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.pj_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.pj_right {
+  width: 550rpx;
+  height: 100%;
+  float: left;
+  font-size: 26rpx;
+  line-height: 40rpx;
+   position: relative;
+  left: 0;
+  top: 0;
+}
+
+.pj_text1,.pj_text2 {
+  line-height: 60rpx;
+}
+
+.pj_text1 {
+  position: absolute;
+  top: -15rpx;
+  left: 0;
+  color:rgb(112,112,112);
+}
+
+ .pj_text2 {
+  position: absolute;
+  right: 20rpx;
+  top: -15rpx;
+  color:rgb(112,112,112);
+}
+.pj_text3 {
+  line-height:70rpx;
+  color:rgb(112,112,112);
+  font-size:26rpx;
+} 
+.pj_line {
+  border-bottom: 1rpx solid #ccc;
+  padding-top:50rpx;
+}
+.pj_guige {
+  font-size:24rpx;
+  color:rgb(204,204,204);
+}
+.pj_imglist {
+  width:100rpx;
+  height:100rpx;
+  float:left;
+  padding:10rpx;
+}
+.pj_imglist image{
+  width:100%;
+  height:100%;
+}

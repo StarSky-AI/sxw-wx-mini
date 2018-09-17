@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<view class="box">
+  <view class="loginbg">
+    <view class="loginPhone">
+      <!-- <text class="loginText1">手机号码</text> -->
+      <view class="loginIpt1">
+        <input type="number" maxlength="11" placeholder='手机号码' ></input>
+      </view>
+    </view>
+    <view class="loginPw">
+      <view class="loginIpt2">
+        <input password type="text" placeholder='登录密码'></input>
+      </view>
+      <view class="loginIpt3" bindtap="goPassword">
+        <text>忘记密码？</text>
+      </view>
+    </view>
+  </view>
+  <button class="loginBtn"  bindtap="goIndex">登录</button>
+  <view class="loginRegest" bindtap="goRegister">
+    <text>还没有账号？立即注册</text>
+  </view>
+</view>

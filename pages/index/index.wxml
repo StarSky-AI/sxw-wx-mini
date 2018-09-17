@@ -1,0 +1,319 @@
+<scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+  <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">{{text1}}</view>
+  <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">{{text2}}</view>
+  <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">{{text3}}</view>
+  <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">{{text4}}</view>
+  <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">{{text5}}</view>
+  <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">{{text6}}</view>
+  <view class="tab-item {{currentTab==6?'active':''}}" data-current="6" bindtap="swichNav">{{text7}}</view>
+  <view class="tab-item {{currentTab==7?'active':''}}" data-current="7" bindtap="swichNav">{{text8}}</view>
+  <view class="tab-item {{currentTab==8?'active':''}}" data-current="8" bindtap="swichNav">{{text9}}</view>
+  <view class="tab-item {{currentTab==9?'active':''}}" data-current="9" bindtap="swichNav">{{text10}}</view>
+  <view class="tab-item {{currentTab==10?'active':''}}" data-current="10" bindtap="swichNav">{{text11}}</view>
+</scroll-view>
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">哈哈</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+  <!-- 首页  -->
+  <swiper-item>
+    <scroll-view scroll-y="true" class="box">
+      <swiper indicator-dots="true" class="swiper-banner" circular="true" indicator-color="#fff" indicator-active-color="#000" autoplay="true" interval="5000" duration="1000">
+
+        <block wx:for="{{adbanner}}" wx:key="{{index}}">
+          <!-- <navigator url="{{item.likeUrl}}"> -->
+          <swiper-item>
+            <image src="{{imgurl}}{{item.imgUrl}}" class="slide-image" />
+          </swiper-item>
+          <!-- </navigator> -->
+        </block>
+      </swiper>
+      <view class="scroll same">
+        <view class="title">
+          <view class="titleLeft">
+            <text class="hot">叁拾肆<text class="dot"></text>味</text>
+            <text class="eng">JUST ARRIVED</text>
+          </view>
+          <view class="titleRight">
+
+            <view class="text">全部推荐</view>
+            <view class="arrow">
+              <image src="../../pageImg/arrow@2x.png" />
+            </view>
+          </view>
+        </view>
+
+        <swiper indicator-dots="true" class="swiper-banner" circular="true" indicator-color="#fff" indicator-active-color="#000" autoplay="true" interval="5000" duration="1000">
+          <block wx:for="{{flavor}}" wx:key="id">
+            <swiper-item>
+              <image src="{{imgurl}}{{item.regionImg}}" class="slide-image" />
+            </swiper-item>
+          </block>
+        </swiper>
+
+      </view>
+
+      <view class="hotGoods same">
+        <view class="title">
+          <view class="titleLeft">
+            <text class="hot">热门推荐</text>
+            <text class="eng">TRENDY TOPICS</text>
+          </view>
+          <view class="titleRight">
+            <view class="text">全部推荐</view>
+            <view class="arrow">
+              <image src="../../pageImg/arrow@2x.png" />
+            </view>
+          </view>
+        </view>
+       
+        <view class="content">
+          <view wx:for="{{like}}" wx:key="id" class="hotPic">
+            <navigator url="/pages/goodsDetail/goodsDetail?id={{item.id}}">
+              <view class="pic">
+                <image src="{{imgurl}}{{item.goodsImg}}" />
+              </view>
+              <view class="hotGoodsName">{{item.goodsName}}</view>
+              <view class="hotGoodsPrice">￥{{item.salePriceRmb}}</view>
+              <view>
+                <!-- <text>{{item.id}}</text> -->
+              </view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+
+      <view class="newProduct same">
+        <view class="title">
+          <view class="titleLeft">
+            <text class="hot">每日新品</text>
+            <text class="eng">JUST ARRIVED</text>
+          </view>
+          <view class="titleRight">
+            <view class="text">全部新品</view>
+            <view class="arrow">
+              <image src="../../pageImg/arrow@2x.png" />
+            </view>
+          </view>
+        </view>
+        <view class="content">
+          <view class="product" wx:for="{{newProduct}}" wx:key="id">
+            <view class="productPic">
+              <image src="{{imgurl}}{{item.goodsImg}}" />
+            </view>
+            <view class="productName">{{item.goodsName}}
+              <text class="productPrice">￥{{item.goodsNumber}}</text>
+            </view>
+            <view class="productDescription">{{item.goodsDesc}}</view>
+          </view>
+
+        </view>
+      </view>
+      <view class="GuessYouLike same">
+        <view class="title">
+          <view class="titleLeft">
+            <text class="hot">猜你喜欢</text>
+            <text class="eng">JUST ARRIVED</text>
+          </view>
+          <view class="titleRight">
+            <view class="text">查看全部</view>
+            <view class="arrow">
+              <image src="../../pageImg/arrow@2x.png" />
+            </view>
+          </view>
+        </view>
+        <view class="content">
+          <view class="like" wx:for="{{recommend}}" wx:key="id">
+            <view class="likePic">
+              <image src="{{imgurl}}{{item.goodsImg}}" />
+            </view>
+            <view class="likeName">{{item.goodsName}}</view>
+            <view class="likePrice">￥ {{item.salePriceRmb}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- 特产页面  -->
+  <swiper-item>
+    <scroll-view scroll-y="true" class="box">
+      <view class="box" id="specialty">
+        <view class="head">
+          <image class="headbg" src="/../../pageImg/picture@2x.png">
+            <view class="item1 item">
+              <view class="gift">
+                <image src="../../pageImg/all.png"></image>
+              </view>
+            </view>
+            <view class="item2 item">干货</view>
+            <view class="item3 item">
+              <view class="item3Text">
+                <text>酒水饮料</text>
+                <text>零食点心</text>
+              </view>
+
+            </view>
+            <view class="item4 item">茶叶</view>
+          </image>
+
+        </view>
+        <view>
+
+          <view class="priceTitle">
+            <view class="{{log?'moren+hover':'moren'}}" bindtap="selectchange">默认</view>
+            <!-- <view class="{{log?'moren+hover':'moren'}}" bindtap="selectchange">默认</view> -->
+            <view bindtap="selected">
+              <text class="jiage" bindtap="selectchange">价格</text>
+              <image wx:if='{{!flag}}' src="../../pageImg/default_sort@2x.png" class="jigeImg"></image>
+              <image wx:if='{{flag}}' src="../../pageImg/down@1x.png" class="jigeImg"></image>
+            </view>
+            <view bindtap="change">
+              <text class="sales" bindtap="selectchange">销量</text>
+              <image wx:if='{{isLogn}}' src="../../pageImg/default_sort@2x.png" class="salesImg"></image>
+              <image wx:if='{{!isLogn}}' src="../../pageImg/down@1x.png" class="salesImg"></image>
+            </view>
+          </view>
+
+        </view>
+        <view class="hotGoods same">
+          <view class="content">
+            <view wx:for="{{hotelUrls}}" wx:key="{{index}}" class="hotPic">
+              <navigator url="../goodsDetail/goodsDetail">
+                <view class="pic">
+                  <image src="{{item.img}}" />
+                </view>
+                <view class="hotGoodsName">{{item.name}}</view>
+                <view class="hotGoodsPrice">￥{{item.price}}</view>
+              </navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- 我是呵呵 -->
+  <swiper-item>
+    <view>我是呵呵3333</view>
+
+  </swiper-item>
+  <!-- 我是嘿嘿 -->
+  <swiper-item>
+    <scroll-view scroll-y="true" class="box">
+      <view class="box" id="specialty">
+        <swiper indicator-dots="true" class="swiper-banner" circular="true" indicator-color="#fff" indicator-active-color="#000" autoplay="true" interval="5000" duration="1000">
+
+          <block wx:for="{{adbanner}}" wx:key="{{index}}">
+            <!-- <navigator url="{{item.likeUrl}}"> -->
+            <swiper-item>
+              <image src="{{imgurl}}{{item.imgUrl}}" class="slide-image" />
+            </swiper-item>
+            <!-- </navigator> -->
+          </block>
+        </swiper>
+        <view>
+
+          <view class="priceTitle">
+            <view class="{{log?'moren+hover':'moren'}}" bindtap="selectchange">默认</view>
+            <view bindtap="selected">
+              <text class="jiage" bindtap="selectchange">价格</text>
+              <image wx:if='{{!flag}}' src="../../pageImg/default_sort@2x.png" class="jigeImg"></image>
+              <image wx:if='{{flag}}' src="../../pageImg/down@1x.png" class="jigeImg"></image>
+            </view>
+            <view bindtap="change">
+              <text class="sales" bindtap="selectchange">销量</text>
+              <image wx:if='{{isLogn}}' src="../../pageImg/default_sort@2x.png" class="salesImg"></image>
+              <image wx:if='{{!isLogn}}' src="../../pageImg/down@1x.png" class="salesImg"></image>
+            </view>
+          </view>
+
+        </view>
+        <view class="hotGoods same">
+          <view class="content">
+            <view wx:for="{{hotelUrls}}" wx:key="{{index}}" class="hotPic">
+              <navigator url="../goodsDetail/goodsDetail">
+                <view class="pic">
+                  <image src="{{item.img}}" />
+                </view>
+                <view class="hotGoodsName">{{item.name}}</view>
+                <view class="hotGoodsPrice">￥{{item.price}}</view>
+              </navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <view>我是哈哈5555</view>
+  </swiper-item>
+  <!-- 我是呵呵 -->
+  <swiper-item>
+    <view>我是呵呵6666</view>
+  </swiper-item>
+  <!-- 我是嘿嘿 -->
+  <swiper-item>
+    <view>我是嘿7777</view>
+  </swiper-item>
+  <!--  商家详情  -->
+  <swiper-item>
+    <scroll-view class="box" scroll-y="true">
+      <!--商品展示轮播  -->
+      <swiper indicator-dots="true" class="swiper-banner" circular="true" indicator-color="#fff" indicator-active-color="#000" autoplay="true" interval="5000" duration="1000">
+        <block wx:for="{{adbannerDetail}}" wx:key="{{index}}">
+          <swiper-item>
+            <image src="{{imgurl}}{{item.imgUrl}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="hotGoods same">
+        <view class="title">
+          <view class="titleLeft">
+            <view class="arrowl">
+              <image src="../../pageImg/arrowl.png" />
+            </view>
+            <text class="hot">精选活动</text>
+          </view>
+          <view class="titleRight">
+            <view class="text">全部活动</view>
+            <view class="arrow">
+              <image src="../../pageImg/arrow@2x.png" />
+            </view>
+          </view>
+        </view>
+        <!-- 精选活动产品展示  -->
+        <view class="hotelDetail">
+          <view class="hotelList" wx:for="{{bestGoods}}" wx:key="{{index}}">
+            <view class="hotelImg">
+              <image src="{{imgurl}}{{item.goodsImg}}"></image>
+            </view>
+            <view class="hotelText">
+              <view class="hotelTitle">
+                <text class="hotelH1">{{item.merchantName}}</text>
+              </view>
+              <text class="hotelH2">{{item.goodsDesc}}</text>
+              <view class="hotelPrice">
+                <view class="hotelM">
+                  <text class="hotelMM">¥ {{item.salePriceRmb}} </text>
+                  <text class="hotelH2">起</text>
+                </view>
+                <text class="hotelDistance">{{item.map}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <view>我是哈哈99999</view>
+  </swiper-item>
+  <!-- 我是呵呵 -->
+  <swiper-item>
+    <view>我是呵呵1010</view>
+  </swiper-item>
+  <!-- 我是嘿嘿 -->
+  <swiper-item>
+    <view>我是嘿嘿1111</view>
+  </swiper-item>
+</swiper>

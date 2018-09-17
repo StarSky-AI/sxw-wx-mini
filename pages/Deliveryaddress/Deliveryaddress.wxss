@@ -1,0 +1,93 @@
+.box{
+	background: #fafafa;
+	width:100%;
+	height:100%;
+}
+.address{
+	width: 100%;
+	height:232rpx;
+	background: #fff;
+	margin-top:20rpx;
+	border-bottom:1rpx solid #eaeaea;
+}
+.info{
+	height:145rpx;
+	border-bottom:1rpx solid #eaeaea;
+	padding-left:30rpx;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.name{
+	font-size:30rpx;
+	color:#000;
+	margin-right:36rpx;
+	font-weight:bolder;
+}
+.phone{
+	font-size: 26rpx;
+	font-weight:bolder;
+}
+.addre{
+	font-size:26rpx;
+	color:#808080;
+	line-height:26rpx;
+	margin-top:24rpx;
+}
+.contor{
+	height:86rpx;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left:30rpx;
+	padding-right:56rpx;
+}
+.contor .left{
+	display:flex;
+	height:32rpx;
+}
+.contor .sel{
+	width:32rpx;
+	height:32rpx;
+	line-height:32rpx;
+	margin-right: 20rpx;
+}
+.contor .sel image{
+	width: 100%;
+	height: 100%;
+}
+.default{
+	font-size:24rpx;
+	color:#808080;
+}
+.right{
+	font-size:26rpx;
+	height:32rpx;
+	color:#000;
+	line-height:32rpx;
+}
+.addAdd{
+	width:100%;
+	height:100rpx;
+	background:#202020;
+	position:fixed;
+	left:0;
+	bottom:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.addAdd .pic{
+	width:30rpx;
+	height:30rpx;
+	margin-right: 16rpx;
+}
+.addAdd .pic image{
+	width:100%;
+	height:100%;
+}
+.addAdd view{
+	font-size:30rpx;
+	line-height:30rpx;
+	color:#fff;
+}

@@ -1,0 +1,77 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/seller/seller",
+    "pages/my/my",
+    "pages/goodsDetail/goodsDetail",
+    "pages/editOrder/editOrder",
+    "pages/Orderlist/Orderlist",
+    "pages/Deliveryaddress/Deliveryaddress",
+    "pages/newAddress/newAddress",
+    "pages/shopcar/shopcar",
+    "pages/orderDetails/orderDetails",
+    "pages/authentication/authentication",
+    "pages/search/search",
+    "pages/hotel/hotel",
+    "pages/specialty/specialty",
+    "pages/divine/divine",
+    "pages/new/new",
+    "pages/assortment/assortment",
+    "pages/login/login",
+    "pages/password/password",
+    "pages/register/register",
+    "pages/goodsDetail02/goodsDetail02",
+    "pages/shangjia/shangjia",
+    "pages/edit/edit",
+    "pages/chooseAddre/chooseAddre",
+    "pages/modifyAddre/modifyAddre",
+    "pages/newAddre/newAddre",
+    "pages/cleanOrder/cleanOrder",
+    "pages/evaluate/evaluate"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#848484",
+    "selectedColor": "#000",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "tabImg/home.png",
+        "selectedIconPath": "tabImg/homeSel.png"
+      },
+      {
+        "pagePath": "pages/shangjia/shangjia",
+        "text": "商家",
+        "iconPath": "tabImg/seller.png",
+        "selectedIconPath": "tabImg/sellerSel.png"
+      },
+      {
+        "pagePath": "pages/assortment/assortment",
+        "text": "分类",
+        "iconPath": "tabImg/class.png",
+        "selectedIconPath": "tabImg/classSel.png"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车",
+        "iconPath": "tabImg/shopcar.png",
+        "selectedIconPath": "tabImg/shopcarSel.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "tabImg/my.png",
+        "selectedIconPath": "tabImg/mySel.png"
+      }
+    ]
+  }
+}

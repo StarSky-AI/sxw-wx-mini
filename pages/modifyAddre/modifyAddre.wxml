@@ -1,0 +1,65 @@
+<!-- 信息部分开始 -->
+<form bindsubmit="formSubmit" report-submit="true">
+  <view class="info">
+    <!-- 姓名部分 -->
+    <view class="item">
+      <text>用户姓名</text>
+      <view class="right">
+        <input type="text" name="name" value="{{name}}" focus="{{focus}}" />
+      </view>
+    </view>
+
+    <!-- 电话部分 -->
+    <view class="item">
+      <text>联系电话</text>
+      <view class="right">
+        <input name="tel" type="number" value="{{tel}}" focus="{{focus}}" />
+      </view>
+    </view>
+
+
+
+    <!-- 收货地址部分 -->
+    <view class="item">
+      <view class="name">
+        省市区
+      </view>
+      <view class="right">
+        <input wx:if="{{!provinceName[provinceSelIndex]}}" name="address" value='{{addre}}' placeholder="请选择地区" bindtap="showDistpicker" />
+        <input wx:else value="{{provinceName[provinceSelIndex]}} {{cityName[citySelIndex]}} {{districtName[districtSelIndex]}}" name="address" bindtap="showDistpicker" />
+      </view>
+    </view>
+    <view class="item">
+      <text>详细地址</text>
+      <view class="right">
+        <input name="door" type="text" value="{{door}}" placeholder='街道门牌信息' focus="{{focus}}" />
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 信息部分结束 -->
+  <button class="save" type='primary' formType="submit">保存</button>
+  <button class="delete" bindtap="delete">删除该地址</button>
+  <button class="delete" bindtap="cancel">取消</button>
+</form>
+
+<!-- 选择城市  -->
+<view class="distpicker {{showDistpicker ? '' : 'visibility'}}">
+  <view class="distpicker-btn">
+    <view class="distpicker-cancel-btn" bindtap="distpickerCancel">取消</view>
+    <view class="distpicker-sure-btn" bindtap="distpickerSure">确定</view>
+  </view>
+  <picker-view indicator-style="height: 40px;" class="distpicker-content" value="{{address}}" bindchange="changeArea">
+    <picker-view-column>
+      <view wx:for="{{provinceName}}" wx:key="province" class="area-item">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{cityName}}" wx:key="city" class="area-item">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{districtName}}" wx:key="district" class="area-item">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+
+</view>
